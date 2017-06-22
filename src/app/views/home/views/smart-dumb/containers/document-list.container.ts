@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
-import { Document } from '../document.model';
-import { DocumentService } from '../document.service';
+import { Document } from '../../../document.model';
+import { DocumentService } from '../../../document.service';
 import { Observable } from 'rxjs/Observable';
 
 @Component({

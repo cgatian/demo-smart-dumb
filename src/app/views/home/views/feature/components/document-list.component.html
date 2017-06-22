@@ -1,8 +1,8 @@
 <div class="document-list">
   <h3 class="document-list__title">Document Type {{documentTypeId}}</h3>
   <md-nav-list>
-    <md-list-item *ngFor="let document of documents | async" (click)="onDocumentSelected(document)">
-      <app-document [document]=document></app-document>
+    <md-list-item *ngFor="let document of documents" (click)="onDocumentSelected(document)">
+      <app-document-item [document]="document"></app-document-item>
     </md-list-item>
   </md-nav-list>
 </div>

@@ -1,10 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { HomeView } from './home.view';
+import { SmartDumbView } from './views/smart-dumb/smart-dumb.view';
+import { OneComponentView } from './views/one-component/one-component.view';
+import { FeatureComponent } from './views/feature/feature.component';
 
 const routes: Routes = [
-    { path: '', component: HomeView }
+  { path: '', redirectTo: 'one-component' },
+  { path: 'one-component', component: OneComponentView },
+  { path: 'feature-component', component: FeatureComponent },
+  { path: 'smart-dumb', component: SmartDumbView },
 ];
 
 @NgModule({
@@ -13,4 +18,3 @@ const routes: Routes = [
   ]
 })
 export class HomeRoutingModule {}
-

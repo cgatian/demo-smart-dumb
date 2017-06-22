@@ -1,0 +1,11 @@
+<div>Selected Document: {{selectedDocument?.name}}</div>
+<div class="document-list">
+  <h3 class="document-list__title">Document Type {{documentTypeId}}</h3>
+  <md-nav-list>
+    <md-list-item *ngFor="let document of documents | async" (click)="onSelectedDocument(document)">
+      <div>
+        <span>{{document.name}}</span>
+      </div>
+    </md-list-item>
+  </md-nav-list>
+</div>
