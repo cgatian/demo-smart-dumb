@@ -5,7 +5,7 @@ import { HomeRoutingModule } from './home.routing';
 import { DocumentService } from './document.service';
 
 import { HomeSharedModule } from './home-shared.module';
-import { OneComponentView } from './views/one-component/one-component.view';
+import { OneComponentView } from './views/single/single.component';
 import { FeatureModule } from './views/feature/feature.module';
 import { SmartDumbModule } from './views/smart-dumb/smart-dumb.module';
 

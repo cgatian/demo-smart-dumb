@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { SmartDumbView } from './views/smart-dumb/smart-dumb.view';
-import { OneComponentView } from './views/one-component/one-component.view';
+import { OneComponentView } from './views/single/single.component';
 import { FeatureComponent } from './views/feature/feature.component';
 
 const routes: Routes = [

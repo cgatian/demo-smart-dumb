@@ -4,10 +4,10 @@ import { DocumentService } from '../../document.service';
 import { Observable } from 'rxjs/Observable';
 
 @Component({
-  selector: 'app-one-component-view',
-  templateUrl: './one-component.view.html',
+  selector: 'app-single',
+  templateUrl: './single.component.html',
   styleUrls: [
-    './one-component.view.scss'
+    './single.component.scss'
   ]
 })
 export class OneComponentView implements OnInit {
